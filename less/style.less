@@ -1,0 +1,125 @@
+/* fonts family */
+@font-face {
+	font-family: 'ProximaNova_bold';
+	src: url('../fonts/ProximaNova-Bold.eot');
+	src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+			url('../fonts/ProximaNova-Bold.woff') format('woff'),
+			url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+			url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'ProximaNova_Reg';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+			url('../fonts/ProximaNova-Regular.woff') format('woff'),
+			url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+			url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+.reg() {
+	font-family: 'ProximaNova_Reg',sans-serif;
+}
+.bold() {
+	font-family: 'ProximaNova_bold',sans-serif;
+}
+
+/* Colors */
+@btn-color: #fcb303;
+@icons-color: #46b814;
+@text: #1a1820;
+@danger: #ff0000;
+@bg-light: #f5f5f5;
+@light: #fff;
+
+/* Basic setting */
+html {
+	font-size: 10px;
+}
+body {
+	.reg();
+}
+.button {
+	background-color: @btn-color;
+	color: @light;
+	padding: 1rem 3rem;
+	border-radius: 8px;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	border: none;
+}
+/* Typography */
+section {
+	padding: 10rem;
+}
+.test {
+	display: inline-block;
+}
+.joi {
+	display: table;
+		
+	&-blok {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+.fil {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+}
+/* main */
+.main {
+	padding: 3rem 0;
+	&-content {
+		margin-top: 14rem;
+		h1 {
+			.bold();
+			font-size: 4rem;
+			text-transform: uppercase;
+		}
+	}
+	&-subtitle {
+		font-size: 2.4rem;
+	}
+	.ryblei {
+		display: inline-blok;
+		padding: 2rem 5rem;
+		font-size: 1.8rem;
+		color: @light;
+		background-color: @icons-color;
+		text-align: center;
+		strong {
+			font-size: 3rem;
+			.bold();
+		}
+	}
+}
+
+.header {
+	height: 7rem;
+}
+.wrap {
+	display: table;
+	width: 100%;
+	height: 7rem;
+	&-blok {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+.phone-link {
+	display: inline-block ;
+	.bold();
+	font-size: 1.7rem;
+	height: 7rem;
+	line-height: 7rem;
+	color: @text;
+}
